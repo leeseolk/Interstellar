@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.c-slider {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+.c-slider__pagination {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+}
+.c-slider__bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 0.5rem 0;
+  opacity: 0.25;
+  transition: opacity 0.5s ease;
+  will-change: opacity;
+}
+.c-slider__bullet.is-active {
+  opacity: 1;
+}
+
+.c-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+.c-slide__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.c-slide__content {
+  padding: 0 5rem;
+  max-width: 40rem;
+}
+.c-slide__title, .c-slide__text {
+  text-align: center;
+}
+
+.c-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url(https://cdn.mos.cms.futurecdn.net/jfkAU4tM8XMUAPZDm4h5Nh-1920-80.jpeg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.c-bg__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.u-color-white {
+  color: #ffffff;
+}
